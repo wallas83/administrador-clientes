@@ -1,46 +1,15 @@
 import { useLoaderData } from "react-router-dom";
-import { Cliente } from "../components/Cliente";
+import { Clientes } from "../components/Clientes";
+import { obtenerCliente } from "../data/clientes";
 
+
+// el loader que es aorte de react-router-dom siempore debe retornar algo 
 export const loader = () => {
-    const clientes = [
-        {
-            id: 1,
-            nombre: 'Juan',
-            telefono: 102013313,
-            email: "juan@juan.com",
-            empresa: 'Codigo Con Juan'
-        },
-        {
-            id: 2,
-            nombre: 'Karen',
-            telefono: 138198313,
-            email: "karen@juan.com",
-            empresa: 'Codigo Con Juan'
-        },
-        {
-            id: 3,
-            nombre: 'Josue',
-            telefono: 31983913,
-            email: "josue@juan.com",
-            empresa: 'Codigo Con Juan'
-        },
-        {
-            id: 4,
-            nombre: 'Miguel',
-            telefono: 319381983,
-            email: "miguel@juan.com",
-            empresa: 'Codigo Con Juan'
-        },
-        {
-            id: 5,
-            nombre: 'Pedro',
-            telefono: 1398198938,
-            email: "pedro@juan.com",
-            empresa: 'Codigo Con Juan'
-        },
-    ];
-    return clientes;
+    
+   const clientes =  obtenerCliente();
+    return clientes
 }
+
 export const Index = () => {
 
     const loaderData =  useLoaderData();
@@ -62,7 +31,7 @@ export const Index = () => {
 
                     <tbody>
                         {loaderData.map(cliente  => (
-                            <Cliente
+                            <Clientes
                                 key={cliente.id}
                                 cliente={cliente}
                             />
