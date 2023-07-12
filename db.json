@@ -1,18 +1,12 @@
 {
   "clientes": [
     {
-      "id": 1,
-      "nombre": "Juan",
-      "telefono": 102013313,
+      "nombre": "Juan actualizado",
+      "empresa": "Codigo Con Juan",
       "email": "juan@juan.com",
-      "empresa": "Codigo Con Juan"
-    },
-    {
-      "id": 2,
-      "nombre": "Karen",
-      "telefono": 138198313,
-      "email": "karen@juan.com",
-      "empresa": "Codigo Con Juan"
+      "telefono": "102013313",
+      "notas": "nueva nota",
+      "id": 1
     },
     {
       "id": 3,
@@ -29,19 +23,20 @@
       "empresa": "Codigo Con Juan"
     },
     {
-      "id": 5,
-      "nombre": "Pedro",
-      "telefono": 1398198938,
-      "email": "pedro@juan.com",
-      "empresa": "Codigo Con Juan"
-    },
-    {
       "nombre": "matias",
       "empresa": "paypal",
       "email": "ravenyujra@gmail.com",
       "telefono": "73576568",
       "notas": "Necesita un e-commerce en react",
       "id": 6
+    },
+    {
+      "nombre": "Carlos",
+      "empresa": "Modal",
+      "email": "modale@gmail.com",
+      "telefono": "28373372",
+      "notas": "Un cliente importante",
+      "id": 7
     }
   ]
 }
